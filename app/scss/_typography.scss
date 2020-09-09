@@ -1,37 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-$font-primary: 'Roboto', sans-serif;
-$font-secondary: 'Roboto', sans-serif;
+$font-primary: 'Anonymous Pro', monospace;
+$font-secondary: $font-primary;
 
 h1, h2, h3, h4, h5, h6, p, a, small {
   color: $black;
   text-decoration: none; 
   font-family: $font-primary; 
-  line-height: 1.33;
+  // line-height: 1.33;
   font-size: $base-unit; 
 }
 
-h1 { font-weight: 500; }
-h2 { font-weight: 500; }
-h3 { font-weight: 400; }
-h4 { font-weight: 400; }
-h5 { font-weight: 300; }
+  html { 
+    font-size: $base-unit; 
+    scroll-behavior: smooth;
+  }
 
-h6 {
-  font-weight: 300;
-  text-transform: uppercase;
-}
+  body {
+    font-family: 'Anonymous Pro', monospace;
+    color: $black;
+    // line-height: 1.2;
+  }
 
-p,
-li {
-  font-family: $font-primary;
-  font-weight: 300;
-  line-height: 1.33;
+  p { 
+    letter-spacing: 0.75px; 
+    font-size: $base-unit * 1.5;
+    font-weight: 300;
+  }
 
-  b { font-weight: 300; }
-}
+  p + p { margin-top: 1rem;}
 
-small {
-  font-weight: 300;
-  font-size: $base-unit * 0.8;
-}
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: 2rem; 
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  .info-links a {
+    width: max-content;
+    margin-left: auto;
+  }
+
+  a {
+    color: $black;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    text-decoration: none; 
+    display: block;
+    font-weight: 700;
+
+    &:hover { text-decoration: underline; }
+    &:nth-of-type(1n):hover { color: $color-1; }
+    &:nth-of-type(2n):hover { color: $color-2; }
+    &:nth-of-type(4n + 1):hover { color: $color-3; }
+    &:nth-of-type(5n):hover { color: $color-4; }
+  }

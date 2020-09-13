@@ -59,4 +59,3 @@ var build = gulp.parallel(style, watch);
 
 gulp.task('build', build);
 gulp.task('default', build);
-

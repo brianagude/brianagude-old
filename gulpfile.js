@@ -43,13 +43,11 @@ function watch() {
       serveStaticOptions: {
         extensions: ["html"]
       }
-    },
-
-    open: false
+    }
   });
 
   gulp.watch(files.scss).on('change', style);
-  gulp.watch("app/*").on('change', reload);
+  gulp.watch("app/*.html").on('change', reload);
 }
 
 exports.watch = watch

@@ -30,6 +30,3 @@ window.onload = function () {
   makeSpans('p, h1, h2, h3')
   // randomPageClass()
 }
-
-
-

@@ -36,11 +36,15 @@
 
   .info {
     text-align: right;
-    justify-content: center;
+    // justify-content: center;
   }
 
   .projects {
     a + a { margin-top: 1rem; }
+  }
+
+  .text-wrapper {
+    flex: 1; 
   }
 
   .links {

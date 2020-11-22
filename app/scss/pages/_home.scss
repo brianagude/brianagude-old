@@ -1,95 +1,129 @@
+.homepage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 26.25rem;
+  padding: 1rem;
 
-  .homepage {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    max-width: 26.25rem;
+  .container {
+    overflow: scroll;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    border: solid 10px $color-4;
+    background-color: transparentize($color-4, 0.9);
+    box-sizing: border-box;
     padding: 1rem;
 
-    .container {
-      overflow: scroll;
-      scroll-behavior: smooth;
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-      &::-webkit-scrollbar { display: none; }
+    height: 80vh;
+    max-height: 35rem;
 
-      border: solid 10px $color-4;
-      background-color: transparentize($color-4, 0.90);
-      box-sizing: border-box;
-      padding: 1rem;
-
-      height: 80vh;
-      max-height: 35rem;
-
-      div + div { margin-top: 2rem; }
+    div + div {
+      margin-top: 2rem;
     }
   }
+}
 
-  .info,
-  .projects {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
+.info,
+.projects {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.info {
+  text-align: right;
+  // justify-content: center;
+}
+
+.projects {
+  a + a {
+    margin-top: 1rem;
+  }
+}
+
+.text-wrapper {
+  flex: 1;
+
+  p {
+    max-width: 320px;
+    margin-left: auto;
+  }
+}
+
+.links {
+  margin-top: 1.2rem;
+}
+
+li {
+  position: relative;
+  margin-top: 16px;
+  padding-left: 24px;
+
+  &:before {
+    content: ">";
+    font-size: 24px;
+    font-weight: 700;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
-  .info {
-    text-align: right;
-    // justify-content: center;
+  &:nth-of-type(1) a:hover {
+    color: $color-1;
+  }
+  &:nth-of-type(2) a:hover {
+    color: $color-2;
+  }
+  &:nth-of-type(3) a:hover {
+    color: $color-3;
+  }
+  &:nth-of-type(4) a:hover {
+    color: $color-4;
+  }
+}
+
+span {
+  transition: color 15s;
+  &:hover {
+    transition: 0s;
   }
 
-  .projects {
-    a + a { margin-top: 1rem; }
+  &:nth-child(1n):hover {
+    color: $color-1;
   }
-
-  .text-wrapper {
-    flex: 1; 
+  &:nth-child(2n):hover {
+    color: $color-2;
   }
-
-  .links {
-    margin-top: 1.2rem;
+  &:nth-child(4n + 1):hover {
+    color: $color-3;
   }
-
-  li {
-    position: relative;
-    margin-top: 16px;
-    padding-left: 24px; 
-
-    &:before {
-      content: '>';
-      font-size: 24px;
-      font-weight: 700;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-
-    &:nth-of-type(1) a:hover { color: $color-1; }
-    &:nth-of-type(2) a:hover { color: $color-2; }
-    &:nth-of-type(3) a:hover { color: $color-3; }
-    &:nth-of-type(4) a:hover { color: $color-4; }
+  &:nth-child(5n):hover {
+    color: $color-4;
   }
-
-  span {
-    transition: color 15s;
-    &:hover {transition: 0s; }
-
-    &:nth-child(1n):hover { color: $color-1; }
-    &:nth-child(2n):hover { color: $color-2; }
-    &:nth-child(4n + 1):hover { color: $color-3; }
-    &:nth-child(5n):hover { color: $color-4; }
-  }
+}
 
 // media queries ---------------------------------------------------------------------------------
-  @media (min-width: 425px){
-    html { font-size: 20px; }
+@media (min-width: 425px) {
+  html {
+    font-size: 20px;
   }
+}
 
-  @media (min-width: 1400px){
-    html { font-size: 24px; }
+@media (min-width: 1400px) {
+  html {
+    font-size: 24px;
   }
+}
 
-  @media (min-width: 1800px){
-    html { font-size: 32px; }
+@media (min-width: 1800px) {
+  html {
+    font-size: 32px;
   }
+}

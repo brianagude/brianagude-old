@@ -92,6 +92,7 @@ video {
   vertical-align: baseline;
 }
 
+/* HTML5 display-role reset for older browsers */
 article,
 aside,
 details,
@@ -111,6 +112,7 @@ body {
   font-size: 1em;
   overflow-x: hidden;
 }
+
 
 button {
   background: none;
@@ -143,6 +145,7 @@ table {
 }
 
 * {
+
   padding: 0;
   margin: 0;
 

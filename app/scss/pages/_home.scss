@@ -1,56 +1,58 @@
 .homepage {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
-  main {
-    padding: 16px;
-  }
+	main {
+		padding: 16px;
+	}
 
-  canvas {
-    position: absolute;
-  }
+	canvas {
+		position: absolute;
+	}
 
-  .mail-link {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    z-index: 1;
-  }
+	.mail-links {
+		position: absolute;
+		top: 16px;
+		right: 16px;
+		z-index: 1;
+		width: max-content;
+		text-align: right;
+	}
 
-  .intro {
-    max-width: 320px;
+	.intro {
+		max-width: 320px;
 
-    img {
-      width: 136px;
-      margin: auto;
-      display: block;
-    }
-  }
+		img {
+			width: 136px;
+			margin: auto;
+			display: block;
+		}
+	}
 
-  .description {
-    margin-top: 16px;
-    text-align: center;
-  }
+	.description {
+		margin-top: 16px;
+		text-align: center;
+	}
 
-  .projects {
-    margin-top: 24px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	.projects {
+		margin-top: 24px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 
-    a {
-      position: relative;
-      z-index: 1;
+		a {
+			position: relative;
+			z-index: 1;
 
-      // &:hover {
-      //   &:before,
-      //   &:after {
-      //     content: "*";
-      //     color: $green;
-      //   }
-      // }
-    }
-  }
+			// &:hover {
+			//   &:before,
+			//   &:after {
+			//     content: "*";
+			//     color: $green;
+			//   }
+			// }
+		}
+	}
 }

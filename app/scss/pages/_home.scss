@@ -19,6 +19,23 @@
 		z-index: 1;
 		width: max-content;
 		text-align: right;
+
+		a {
+			color: $pink;
+		}
+	}
+
+	.bottom-links {
+		position: absolute;
+		bottom: 16px;
+		left: 16px;
+		z-index: 1;
+		width: max-content;
+
+		a {
+			color: $pink;
+			cursor: pointer;
+		}
 	}
 
 	.intro {
